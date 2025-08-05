@@ -1,11 +1,7 @@
 #!/bin/bash
-echo "Digite o nome do arquivo: "
-read arquivo
-
+read -p "Digite o nome do arquivo: " arquivo
 if [ -f "$arquivo" ]; then
-	echo "O arquivo '$arquivo' existe na pasta."
-	echo "Tamanho:$(stat -c %s "$arquivo") bytes"
+  echo "O arquivo existe."
 else
-	echo "Arquivo nao encontrado"
+  echo "O arquivo não existe."
 fi
-

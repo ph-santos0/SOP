@@ -1,4 +1,3 @@
 #!/bin/bash
-echo "Digite o endereço destino: "
-read host
+read -p "Digite o host de destino: " host
 traceroute $host
